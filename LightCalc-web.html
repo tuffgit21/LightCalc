@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightCalc — Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CalcStyle.css">
+</head>
+
+<body>
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+    </div>
+
+    <main class="calculator">
+        <header class="calc-header">
+            <div class="brand">
+                <img id="design-preview" class="brand-logo" src="LightCalc-source/Calculator/calculator.png" alt="LightCalc design preview">
+                <span class="brand-name">LightCalc</span>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark and light mode">
+                <span class="theme-icon" aria-hidden="true">🌙</span>
+            </button>
+        </header>
+
+        <!-- Display -->
+        <div class="display">
+            <div class="history" id="history"></div>
+            <input
+                type="text"
+                id="display"
+                value="0"
+                readonly
+                aria-label="Calculator display"
+            >
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button class="function" data-action="clear">AC</button>
+            <button class="function" data-action="delete">⌫</button>
+            <button class="operator" data-value="%">%</button>
+            <button class="operator" data-value="/">÷</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button class="operator" data-value="*">×</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button class="operator" data-value="-">−</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button class="operator" data-value="+">+</button>
+
+            <button class="function paren" data-action="paren">( )</button>
+            <button data-value="0" class="zero">0</button>
+            <button data-value=".">.</button>
+            <button class="equals" data-action="calculate">=</button>
+
+        </div>
+
+        <p class="hint">Tip: use your keyboard — digits, <kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd>, <kbd>Enter</kbd> =, <kbd>Backspace</kbd> ⌫, <kbd>Esc</kbd> AC</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
