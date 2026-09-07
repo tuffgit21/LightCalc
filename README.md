@@ -19,7 +19,7 @@ LightCalc is a small, open-source calculator with keyboard input, expression his
 
 ## Use the Web Version
 
-Open [LightCalc-web.html](LightCalc-web.html) in a browser, or visit the project website. No installation or build step is required.
+Open <a href="https://tuffgit21.github.io/LightCalc/LightCalc-web.html">LightCalc</a> in a browser, or visit the project website. No installation or build step is required.
 
 ## Run the Desktop Version From Source
 
@@ -47,7 +47,7 @@ On Windows, use `python` instead of `python3` if that is the command provided by
 
 The project can be packaged with <a href="https://tuffgit21.github.io/Debian-App-Builder/">Debian App Builder</a>. This creates the Debian directory structure, launcher, desktop entry, and final `.deb` package through a graphical workflow.
 
-1. Launch `DebianAppBuilder-source/DebAppBuilder.py` from the Debian App Builder repository.
+1. Install Debian App Builder downloaded from the Debian-App-Builder releases.
 2. Choose the `LightCalc-source/Calculator/LightCalc.pyw` file, or select the complete `LightCalc-source/Calculator` folder.
 3. Enter the package name, version, architecture, dependencies, and maintainer information.
 4. Review the generated files and build the package from the **Build** tab.
@@ -63,7 +63,7 @@ sudo apt install dpkg-dev
 dpkg-deb --build LightCalc-source-deb
 ```
 
-For Windows releases, use the packaged release artifacts or build the Python application with your preferred PyInstaller configuration.
+For Windows releases, use the packaged release artifacts or build the Python application with your preferred PyInstaller or auto-py-to-exe configurations.
 
 ## Repository Layout
 
