@@ -45,7 +45,7 @@ On Windows, use `python` instead of `python3` if that is the command provided by
 
 ## Build Using Debian App Builder
 
-The project can be packaged with [Debian App Builder](../Debian-App-Builder/). This creates the Debian directory structure, launcher, desktop entry, and final `.deb` package through a graphical workflow.
+The project can be packaged with <a href="https://tuffgit21.github.io/Debian-App-Builder/">Debian App Builder</a>. This creates the Debian directory structure, launcher, desktop entry, and final `.deb` package through a graphical workflow.
 
 1. Launch `DebianAppBuilder-source/DebAppBuilder.py` from the Debian App Builder repository.
 2. Choose the `LightCalc-source/Calculator/LightCalc.pyw` file, or select the complete `LightCalc-source/Calculator` folder.
